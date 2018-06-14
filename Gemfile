@@ -35,7 +35,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'react-rails', '~> 1.7', '>= 1.7.1'
 gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'jquery-rails'
-gem 'gmaps4rails'
+gem 'simple_form', '~> 3.5'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

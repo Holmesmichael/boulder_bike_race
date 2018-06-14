@@ -1,37 +1,44 @@
-<%= form_with(model: submission, local: true) do |form| %>
-  <% if submission.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(submission.errors.count, "error") %> prohibited this submission from being saved:</h2>
-
-      <ul>
-      <% submission.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+ <div class="container">
+  <div class="row">
+    <div class="col-sm">
+      One of three columns
     </div>
-  <% end %>
-
-  <div class="field">
-    <%= form.label :first_name %>
-    <%= form.text_field :first_name, id: :submission_first_name %>
+    <div class="col-sm">
+      One of three columns
+    </div>
+    <div class="col-sm">
+      One of three columns
+    </div>
   </div>
+</div>
 
-  <div class="field">
-    <%= form.label :last_name %>
-    <%= form.text_field :last_name, id: :submission_last_name %>
-  </div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3">
+      
+    </div>
+    <div class="col-sm-6">
+      
 
-  <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email, id: :submission_email %>
-  </div>
+      <%= simple_form_for @submission do |f| %>
+        
+          <%= f.input :first_name %>
+                 
+          <%= f.input :last_name %>
+                  
+          <%= f.input :email %>
+          
+          <%= f.input :slogan, maxlength: 50 %>
+          
+          <%= f.button :submit %>
+     
+      <% end %>
 
-  <div class="field">
-    <%= form.label :slogan %>
-    <%= form.text_field :slogan, id: :submission_slogan %>
+    
+    </div>
+    <div class="col-sm-3">
+      
+    </div>
   </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
-<% end %>
+</div>
+  

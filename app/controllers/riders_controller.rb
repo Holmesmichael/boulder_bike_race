@@ -6,7 +6,10 @@ class RidersController < ApplicationController
   # GET /riders.json
   def index
     @riders = Rider.all
-    render json: @riders
+    respond_to do |format|
+      format.html
+      format.json { render json: @riders }
+    end
   end
 
   # GET /riders/1
