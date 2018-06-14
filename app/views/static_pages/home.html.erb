@@ -6,7 +6,8 @@
     </div>
     <div class="col-lg-10">
     
-         <%= video_tag "sprocket.mp4", controls: false, autoplay: true, muted: true, loop: true, class: "video" %>
+         <%# <%= video_tag "cyclist.mp4", controls: false, autoplay: true, muted: true, loop: true, class: "video" %> 
+         <%= image_tag "blurredracer.jpg", class: "landing-image" %>
     
     </div>
     <div class="col-sm-">
@@ -18,40 +19,56 @@
         <div class="col-sm">
         </div>
         <div class="col-md">
-            <h1 style="margin-top:-100px;">Boulder Bike Race</h2>
+            <h1 style="margin-top:-700px;">Boulder Bike Race</h2>
         </div>
         <div class="col-sm">
         </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-sm-2">
+
+  <div class="row countdown-row">
+    <div class="col-sm-4">
     </div>
-    <div class="col-md-8 countdown">
-      <h4>Race Begins April 1, 2020</h4>
-       <%= render ("layouts/countdown") %> 
+
+    <div class="col-md-4 countdown">
+      <div class="card" style="width: 18rem;">
+        <%= render ("layouts/countdown") %> 
+        <div class="card-body">
+          <h5 class="card-title">Save the date</h5>
+          <p class="card-text">Make sure you are ready, there is more than enough time!</p>
+        </div>
+      </div>  
     </div>
-    <div class="col-sm-2">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-6">
-      <h3>Sponsors</h3>
-      <p>Sponsor image gallery</p>
-    </div>
-    <div class="col-md-6">
-      <h3>Contest</h3>
-      <p>fun contest information here</p>
+
+    <div class="col-sm-4">
     </div>
   </div>
+
+  <div class="row sponsors-contest">
+    <div class="col-md-6">
+      <%= render ("layouts/sponsors") %>
+    </div>
+    <div class="col-md-6">
+      <div class="card text-center" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Contest!</h5>
+          <p class="card-text">Boring Contest info goes here</p>
+          <a href="/submissions/new" class="btn btn-warning">Contest</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="row info-history">
     <div class="col-md-6">
     <h3>Additional information</h3>
-    <p>fun in a bun</p>
+    <p>The 2018 schedule features 11 criteriums including one new venue: Janesville. You’ll find generous cash payouts (including equal payouts for Pro Men and Pro Women), hefty primes, daily winners’ jerseys, category-specific omnium leaders’ jerseys, safe courses, on-time starts, timely results, over 1,000 cartons of Nature’s Touch lowfat chocolate milk per day for recovery, and more, at this world-class series in 2018. Representing 42 U.S states and 15 countries in 2017, racers competed for more than $150,000 in cash and merchandise before an estimated 100,000 passionate spectators.</p>
     </div>
     <div class="col-md-6">
     <h3>Race Heritage</h3>
-    <p>blahblahblahblahblahblahblah</p>
+    <p>Tour of America’s Dairyland (ToAD) presented by KwikTrip offers high-energy cycling action featuring Pro and Amateur racers from across the nation and around the world. On most days, the races run nearly non-stop from 11:00am to 8:30pm and showcase male and female athletes from a wide range of ages and skill levels.
+
+Think cycling is a snooze? You’re wrong! The final event of each day, the Men’s Pro Race, will feature speeds exceeding 35mph! Add to that our professional announcing duo of Todd Busteed and Brad Sohner; they’ll not only thrill you with their race updates and rich color commentary, but will educate you on the sport of cycling…so you can understand race strategy and team dynamics. And they’ll keep you entertained…ask anyone who’s been to a ToAD race! Last year, Brad downed 100 cartons of Wisconsin chocolate milk over the course of 11 days, and Todd was interviewing a Great Dane on the winner’s podium.</p>
     </div>
   </div>
 </div>
