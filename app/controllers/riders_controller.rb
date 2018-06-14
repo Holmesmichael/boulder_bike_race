@@ -1,17 +1,28 @@
 class RidersController < ApplicationController
   before_action :set_rider, only: [:show, :edit, :update, :destroy]
+  respond_to? :json
 
   # GET /riders
   # GET /riders.json
   def index
     @riders = Rider.all
+    render json: @riders
   end
 
   # GET /riders/1
   # GET /riders/1.json
   def show
+    @rider = Rider.where(id: params[:id])
+    respond_to do |format|
+      format.html
+      format.json { render json: @rider }
+    end
   end
 
+
+  # def map
+   
+  # end
   # GET /riders/new
   def new
     @rider = Rider.new
@@ -65,6 +76,7 @@ class RidersController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_rider
       @rider = Rider.find(params[:id])
+      
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

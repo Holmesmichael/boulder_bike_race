@@ -1,0 +1,39 @@
+
+    <style>
+                .photo__gallery {
+                    display:inline-block;
+                };
+    </style> 
+
+
+        <script>
+                    $(function(){
+                        var options = {
+                            method: 'flickr.photos.search',
+                            api_key: '468888e70413687db6b4ec3f7629507c',
+                            sort: 'relevance',
+                            tags: '#bikerace , #boulderbiketour' ,
+                            extras: 'url_m',
+                            per_page: 40,
+                            format: 'json',
+                            nojsoncallback: 1
+                        };
+                        
+                        $.get('http://api.flickr.com/services/rest/', options, function(resp){
+                            var images;
+                            
+                                images = $('<ul>', {'class': 'gallery'})
+                                $.each(resp.photos.photo, function(index, value){
+                                    var image = $('<li>', {
+                                        'class': 'photo__gallery'
+                                    }).append($('<img>', {
+                                        src: value.url_m,
+                                        title: value.title,
+                                        height: '200px',
+                                        width: '200px',
+                                    })).appendTo(images);
+                                });
+                                images.appendTo('body');
+                        });
+                    });
+        </script>

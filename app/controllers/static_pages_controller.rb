@@ -1,4 +1,7 @@
 class StaticPagesController < ApplicationController
+  respond_to? :json
+
+
   def home
   end
 
@@ -6,5 +9,8 @@ class StaticPagesController < ApplicationController
   end
 
   def location
+    
   end
+
+
 end

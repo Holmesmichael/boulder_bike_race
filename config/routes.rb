@@ -10,6 +10,12 @@ Rails.application.routes.draw do
   resources :submissions
 
   resources :riders 
+  # do
+  #   collection do
+  #     get :map
+  #   end
+  # end
+
 
 
 
