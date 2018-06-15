@@ -1,13 +1,14 @@
 
-<div class="container">
-  <div class="row">
+<div class="container" >
+  <div class="row landing-parallax">
     <div class="col-sm-1">
       
     </div>
     <div class="col-lg-10">
-    
-         <%# <%= video_tag "cyclist.mp4", controls: false, autoplay: true, muted: true, loop: true, class: "video" %> 
-         <%= image_tag "blurredracer.jpg", class: "landing-image" %>
+      
+      
+         <%# <%= image_tag "blurredracer.jpg", class: "landing-image" %> 
+      
     
     </div>
     <div class="col-sm-">
@@ -19,7 +20,8 @@
         <div class="col-sm">
         </div>
         <div class="col-md">
-            <h1 style="margin-top:-700px;">Boulder Bike Race</h2>
+            <%= image_tag("bbrlogo.png", { :style => "margin-top:-1100px; width:150px;height:150px;"}) %>
+
         </div>
         <div class="col-sm">
         </div>
@@ -44,19 +46,27 @@
     </div>
   </div>
 
-  <div class="row sponsors-contest">
-    <div class="col-md-6">
-      <%= render ("layouts/sponsors") %>
-    </div>
-    <div class="col-md-6">
-      <div class="card text-center" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Contest!</h5>
-          <p class="card-text">Boring Contest info goes here</p>
-          <a href="/submissions/new" class="btn btn-warning">Contest</a>
+  <div class="row sponsors-contest parallax">
+      <div class="col-md-6" style="padding-top:160px;">
+        <div class="card border-light mb-3" style="max-width: 18rem;margin-left:35%;">
+          <div class="card-header">Sponsors</div>
+          <div class="card-body">
+           <%= render ("layouts/sponsors") %>
+          </div>
         </div>
       </div>
-    </div>
+      <div class="col-md-6"style="padding-top:160px;padding-left:10%;">
+        
+        <div class="card text-center" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Contest!</h5>
+            <p class="card-text">Boring Contest info goes here</p>
+              <a href="/submissions/new" class="btn btn-warning">Contest</a>
+          </div>
+        </div>
+      
+      </div>
+    
   </div>
 
   <div class="row info-history">

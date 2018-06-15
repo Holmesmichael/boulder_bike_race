@@ -21,11 +21,53 @@
            colors
  --------------------------*/
 
+//  #D17B3F (peru)
+//  #d1956a (brown yellow)
+//  #3f230c (dark sienna)
+//  #172d0c (dark jungle green)
+//  #00184f (oxford blue)
+//  #f7f9f9 (ghost white)
+//  #383838 (gunmetal)
  /*--------------------------
            typography
  --------------------------*/
 
+ h1, h2, h3, h4, h5, h6, p {
+     color: #3f230c;
+ }
+ 
 
+  /*--------------------------
+        general
+ --------------------------*/
+ a :hover {
+    background-color: #D17B3F !important;
+}
+
+.btn-warning {
+    color:white !important;
+    background-color:#D17B3F !important;
+}
+
+.container {
+text-align: center;
+}
+
+body, html {
+    height: 100%;
+    background-color:   #f7f9f9 !important;
+}
+
+.parallax { 
+    
+    background-image: url("road.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .8;
+}
 
 /*--------------------------
            Home
@@ -49,7 +91,10 @@
 //         transform: translate(-50%, -50%);
 //    }
 
-.landing-image {
+.landing-parallax {
+    width:1590px;
+    height: 900px;
+    background-image: url("blurredracer.jpg");
     opacity: 0.9;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -57,6 +102,10 @@
     background-size: cover;
     margin-left: -300px;
     margin-top: -75px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    
 }
  
 
@@ -68,6 +117,10 @@
   .countdown-row {
       margin-top: 20px;
       margin-bottom: 20px;
+  }
+
+  .countdown {
+      margin-top: 65px;
   }
 
   #clockdiv {
@@ -84,6 +137,11 @@
       margin-bottom: 100px;
   }
   
+  .sponsors-contest {
+      min-height: 500px;
+      margin-left: -200px;
+      margin-right: -200px;
+  }
   /*--------------------------
            contest
  --------------------------*/
@@ -106,8 +164,12 @@
         navigation
  --------------------------*/
 
+ .navbar {
+     background-color: #172D0C;
+ }
+
  .nav-logo {
-    color: navy !important;
+    color:#d1956a !important;
     margin-right: 90%;
 }
 
@@ -118,11 +180,13 @@
      justify-content: center;
      bottom: 0px;
      margin-top: 100px;
+     background-color: #f7f9f9;
+     color: #6b3814;
      
  }
  .fa {
     padding: 20px;
-    font-size: 30px;
+    font-size: 60px;
     width: 50px;
     text-align: center;
     text-decoration: none;
@@ -132,6 +196,7 @@
 
 .fa:hover {
     opacity: 0.7;
+    background-color: #172d0c;
 }
 
 
@@ -149,16 +214,6 @@
 }
 
 .fa-snapchat {
-    background: yellow;
+    background: #D17B3F;
     color: white;
 }
-  /*--------------------------
-        general
- --------------------------*/
-    a :hover {
-        background-color: none;
-    }
-
-    .container {
-    text-align: center;
-    }
