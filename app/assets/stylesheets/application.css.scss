@@ -28,7 +28,7 @@
 //  #d1956a (brown yellow)
 //  #3f230c (dark sienna)
 //  #172d0c (dark jungle green)
-//  #00184f (oxford blue)
+//  #011446 (oxford blue)
 //  #f7f9f9 (ghost white)
 //  #383838 (gunmetal)
  /*--------------------------
@@ -36,7 +36,7 @@
  --------------------------*/
 
  h1, h2, h3, h4, h5, h6, p {
-     
+    
      color: #3f230c;
  }
  
@@ -48,15 +48,19 @@ p, #clockdiv {
 h2, h3, h4, h5 {
     font-family: 'Cabin', serif;
     
+    
 }
 
 h1 , h6, .info-history h5 {
     font-family: 'Pacifico', serif;
     color: white;
+    text-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    // box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
 .info-history p {
     color: rgba(255, 255, 255, 0.568);
+   
 }
 
 
@@ -136,6 +140,7 @@ body, html {
   .info-history {
       background-color:#011446;
       height: 380px;
+      box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
       h5 {
           margin-top: 15px;
       }
@@ -149,14 +154,21 @@ body, html {
 
   .countdown {
       margin-top: 65px;
+      .card {
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+      }
+      
   }
 
   #clockdiv {
-      background-color:lightgray;
+      background-color:#011446;
+      color: rgba(255, 255, 255, 0.568);
+      font-weight:600;
+      
   }
 
   #clockdiv .seconds {
-      color: darkred;
+      color: rgb(185, 3, 3);
   }
 
 
@@ -173,6 +185,7 @@ body, html {
       min-height: 500px;
       margin-left: -200px;
       margin-right: -200px;
+      box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   }
   /*--------------------------
            contest
@@ -212,8 +225,10 @@ body, html {
      justify-content: center;
      bottom: 0px;
      margin-top: 100px;
-     background-color: #f7f9f9;
+     background-color: rgba(160, 157, 157, 0.568);
      color: #6b3814;
+     margin-left: -200px;
+     margin-right: -200px;
      
  }
  .fa {

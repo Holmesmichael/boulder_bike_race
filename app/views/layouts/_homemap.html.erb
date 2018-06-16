@@ -1,0 +1,15 @@
+            <script>
+                // Initialize and add the map
+                function initMap() {
+                  // The location of Uluru
+                  var boulder = {lat: 40.014, lng: -105.270};
+                  // The map, centered at Uluru
+                  var map = new google.maps.Map(
+                      document.getElementById('map'), {zoom: 10, center: boulder});
+                  // The marker, positioned at Uluru
+                  var marker = new google.maps.Marker({position: boulder, map: map});
+                }
+              </script>
+              <script async defer
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAs2tWVlXznbp6ySamqYXot3sd7wNNLuXI&callback=initMap">
+              </script>

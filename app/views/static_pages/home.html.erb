@@ -38,8 +38,8 @@
       <div class="card" style="width: 18rem;">
         <%= render ("layouts/countdown") %> 
         <div class="card-body">
-          <h5 class="card-title">Save the date</h5>
-          <p class="card-text">Make sure you are ready, there is more than enough time!</p>
+          <h2 class="card-title" style="font-family:'Pacifico';">Save the date</h2>
+          <p class="card-text">The Boulder Bicycle Tour is <strong>April 1, 2020</strong>...Time to train!</p>
         </div>
       </div>  
     </div>
@@ -51,25 +51,24 @@
   <div class="row sponsors-contest parallax">
       <div class="col-md-6" style="padding-top:160px;">
         <div class="card border-light mb-3 contest-spon" style="max-width: 18rem;margin-left:35%;">
-          <div class="card-header">Sponsors</div>
-          <div class="card-body">
-           <%= render ("layouts/sponsors") %>
+          <div class="card-header"><h3>Sponsors</h3></div>
+            <div class="card-body">
+            <%= render ("layouts/sponsors") %>
+            </div>
           </div>
-        </div>
-      </div>
+         </div>
+
       <div class="col-md-6"style="padding-top:160px;padding-left:10%;">
         
         <div class="card border-light mb-3 contest-spon" style="width: 18rem;">
-         <div class="card-header">Contest</div>
-          <div class="card-body">
-            <p class="card-text">Boring Contest info goes here</p>
-              <a href="/submissions/new" class="btn btn-warning">Contest</a>
+          <div class="card-header"><h3>Contest</h3></div>
+            <div class="card-body">
+              <p class="card-text">BBR is having a contest, winner gets a <strong>prize</strong> and <strong>more!</strong>...click for details!</p>
+              <a href="/submissions/new" class="btn btn-warning">Let'do it!</a>
+            </div>
           </div>
-        </div>
-      
-      </div>
-    
-  </div>
+        </div> 
+    </div>
 
   <div class="row">
     <div class="col-md-6">
@@ -77,23 +76,41 @@
       <div class="card-body">
         <h5 class="card-title">Tour Information</h5>
         <br />
-        <p class="card-text">The 2018 schedule features 11 criteriums including one new venue: Janesville. You’ll find generous cash payouts (including equal payouts for Pro Men and Pro Women), hefty primes, daily winners’ jerseys, category-specific omnium leaders’ jerseys, safe courses, on-time starts, timely results, over 1,000 cartons of Nature’s Touch lowfat chocolate milk per day for recovery, and more, at this world-class series in 2018. Representing 42 U.S states and 15 countries in 2017, racers competed for more than $150,000 in cash and merchandise before an estimated 100,000 passionate spectators.
+        <p class="card-text">The 2018 schedule features 11 criteriums including one new venue: Longmont. You’ll find generous cash payouts (including equal payouts for Pro Men and Pro Women), hefty primes, daily winners’ jerseys, category-specific omnium leaders’ jerseys, safe courses, on-time starts, timely results, over 1,000 cartons of Nature’s Touch lowfat chocolate milk per day for recovery, and more, at this world-class series in 2018. Representing 42 U.S states and 15 countries in 2017, racers competed for more than $150,000 in cash and merchandise before an estimated 100,000 passionate spectators.
         Now is the time! You can do it, train train train then we will see you soon in the winners circle.</p>
       </div>
     </div>
 
     </div>
-    <div class="col-md-6">
-    <div class="card info-history">
-      <div class="card-body">
-        <h5 class="card-title">BBR Heritage</h5>
-        <br />
-        <p class="card-text">Tour of America’s Dairyland (ToAD) presented by KwikTrip offers high-energy cycling action featuring Pro and Amateur racers from across the nation and around the world. On most days, the races run nearly non-stop from 11:00am to 8:30pm and showcase male and female athletes from a wide range of ages and skill levels.Think cycling is a snooze? You’re wrong! The final event of each day, the Men’s Pro Race, will feature speeds exceeding 40mph! Add to that our professional announcing duo of Todd Busteed and Brad Sohner; they’ll not only thrill you with their race updates and rich color
-        commentary, but will educate you on the sport of cycling…so you can understand race strategy and team dynamics. </p>
+      <div class="col-md-6">
+        <div class="card info-history">
+          <div class="card-body">
+            <h5 class="card-title">BBR Heritage</h5>
+            <br />
+            <p class="card-text">Boulder Bike Tour (BBR) presented by KwikTrip offers high-energy cycling action featuring Pro and Amateur racers from across the nation and around the world. On most days, the races run nearly non-stop from 11:00am to 8:30pm and showcase male and female athletes from a wide range of ages and skill levels.Think cycling is a snooze? You’re wrong! The final event of each day, the Men’s Pro Race, will feature speeds exceeding 40mph! Add to that our professional announcing duo of Todd Busteed and Brad Sohner; they’ll not only thrill you with their race updates and rich color
+            commentary, but will educate you on the sport of cycling…so you can understand race strategy and team dynamics. </p>
+          </div>
+        </div>
       </div>
     </div>
 
+
+    <div class="row">
+
+        <div class="col-sm-4"> 
+        </div>
+
+        <div class="col-sm-4" style="width:400px;margin-left:-30px;">
+          <div id="map" style="height:400px;width:400px;border-radius:50%;box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);">
+            <%= render ('layouts/homemap') %>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+        </div>
     </div>
-  </div>
 </div>
+
+
+
 
