@@ -20,7 +20,9 @@
         <div class="col-sm">
         </div>
         <div class="col-md">
-            <%= image_tag("bbrlogo.png", { :style => "margin-top:-1100px; width:150px;height:150px;"}) %>
+            <h6 style="margin-top:-700px;color:white;">Est: 1975</h6>
+            <%= image_tag("bbrlogo.png", { :style => "width:150px;height:150px;"}) %>
+            <h1 style="color:white;">Boulder Bike Race</h1>
 
         </div>
         <div class="col-sm">
@@ -48,7 +50,7 @@
 
   <div class="row sponsors-contest parallax">
       <div class="col-md-6" style="padding-top:160px;">
-        <div class="card border-light mb-3" style="max-width: 18rem;margin-left:35%;">
+        <div class="card border-light mb-3 contest-spon" style="max-width: 18rem;margin-left:35%;">
           <div class="card-header">Sponsors</div>
           <div class="card-body">
            <%= render ("layouts/sponsors") %>
@@ -57,9 +59,9 @@
       </div>
       <div class="col-md-6"style="padding-top:160px;padding-left:10%;">
         
-        <div class="card text-center" style="width: 18rem;">
+        <div class="card border-light mb-3 contest-spon" style="width: 18rem;">
+         <div class="card-header">Contest</div>
           <div class="card-body">
-            <h5 class="card-title">Contest!</h5>
             <p class="card-text">Boring Contest info goes here</p>
               <a href="/submissions/new" class="btn btn-warning">Contest</a>
           </div>
@@ -69,16 +71,29 @@
     
   </div>
 
-  <div class="row info-history">
+  <div class="row">
     <div class="col-md-6">
-    <h3>Additional information</h3>
-    <p>The 2018 schedule features 11 criteriums including one new venue: Janesville. You’ll find generous cash payouts (including equal payouts for Pro Men and Pro Women), hefty primes, daily winners’ jerseys, category-specific omnium leaders’ jerseys, safe courses, on-time starts, timely results, over 1,000 cartons of Nature’s Touch lowfat chocolate milk per day for recovery, and more, at this world-class series in 2018. Representing 42 U.S states and 15 countries in 2017, racers competed for more than $150,000 in cash and merchandise before an estimated 100,000 passionate spectators.</p>
+    <div class="card info-history">
+      <div class="card-body">
+        <h5 class="card-title">Tour Information</h5>
+        <br />
+        <p class="card-text">The 2018 schedule features 11 criteriums including one new venue: Janesville. You’ll find generous cash payouts (including equal payouts for Pro Men and Pro Women), hefty primes, daily winners’ jerseys, category-specific omnium leaders’ jerseys, safe courses, on-time starts, timely results, over 1,000 cartons of Nature’s Touch lowfat chocolate milk per day for recovery, and more, at this world-class series in 2018. Representing 42 U.S states and 15 countries in 2017, racers competed for more than $150,000 in cash and merchandise before an estimated 100,000 passionate spectators.
+        Now is the time! You can do it, train train train then we will see you soon in the winners circle.</p>
+      </div>
+    </div>
+
     </div>
     <div class="col-md-6">
-    <h3>Race Heritage</h3>
-    <p>Tour of America’s Dairyland (ToAD) presented by KwikTrip offers high-energy cycling action featuring Pro and Amateur racers from across the nation and around the world. On most days, the races run nearly non-stop from 11:00am to 8:30pm and showcase male and female athletes from a wide range of ages and skill levels.
+    <div class="card info-history">
+      <div class="card-body">
+        <h5 class="card-title">BBR Heritage</h5>
+        <br />
+        <p class="card-text">Tour of America’s Dairyland (ToAD) presented by KwikTrip offers high-energy cycling action featuring Pro and Amateur racers from across the nation and around the world. On most days, the races run nearly non-stop from 11:00am to 8:30pm and showcase male and female athletes from a wide range of ages and skill levels.Think cycling is a snooze? You’re wrong! The final event of each day, the Men’s Pro Race, will feature speeds exceeding 40mph! Add to that our professional announcing duo of Todd Busteed and Brad Sohner; they’ll not only thrill you with their race updates and rich color
+        commentary, but will educate you on the sport of cycling…so you can understand race strategy and team dynamics. </p>
+      </div>
+    </div>
 
-Think cycling is a snooze? You’re wrong! The final event of each day, the Men’s Pro Race, will feature speeds exceeding 35mph! Add to that our professional announcing duo of Todd Busteed and Brad Sohner; they’ll not only thrill you with their race updates and rich color commentary, but will educate you on the sport of cycling…so you can understand race strategy and team dynamics. And they’ll keep you entertained…ask anyone who’s been to a ToAD race! Last year, Brad downed 100 cartons of Wisconsin chocolate milk over the course of 11 days, and Todd was interviewing a Great Dane on the winner’s podium.</p>
     </div>
   </div>
 </div>
+
