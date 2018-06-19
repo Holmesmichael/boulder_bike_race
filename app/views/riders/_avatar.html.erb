@@ -1,0 +1,18 @@
+
+
+
+<script>
+
+$.ajax({
+  url: 'https://randomuser.me/api/',
+  objectType: 'json',
+  success: function(object) {
+    console.log(object);
+     $( "img" ).attr("src",object.results[0].picture.thumbnail); 
+        
+  }
+
+});
+      
+
+</script> 

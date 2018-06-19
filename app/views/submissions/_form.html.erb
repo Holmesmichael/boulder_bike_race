@@ -1,26 +1,22 @@
- <div class="container">
-  <div class="row">
-    <div class="col-sm">
-      One of three columns
-    </div>
-    <div class="col-sm">
-      One of three columns
-    </div>
-    <div class="col-sm">
-      One of three columns
-    </div>
-  </div>
-</div>
-
+<%= image_tag("panorama.jpeg", { :style => "width:100%;height:100%;margin-top:80px;margin-bottom:15px;border-radius:5px;"}) %>
+<h1 style="color:#011446;">Would you like bragging rights AND $1,500???</h1>
 <div class="container">
   <div class="row">
-    <div class="col-sm-3">
-      
+    <div class="col align-self-start">
+      <h3>The scoop</h3>
+      <p>We’re looking for Boulder Bike Race’s finest wordsmiths to create specific slogans for the 2020 BBR Race event. The slogan will be used on the Race day buttons, stickers, banners and more
+       that we’ll give away at Race and visible for all to view.<br />  The winning slogan will be announced on the BBR's Facebook page on the before each race, and 
+       a prize will be awarded for the winning slogan. Contest ends at 5 p.m. on October 1, 2018. If your slogan is selected, you will receive a BBR Prize Pack, with cool $1,500 
+       and a photo autographed by former champion Harnold Schmarnald!</p>
     </div>
-    <div class="col-sm-6">
-      
-
-      <%= simple_form_for @submission do |f| %>
+    <div class="col align-self-center">
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+       <%= simple_form_for @submission do |f| %>
         
           <%= f.input :first_name %>
                  
@@ -33,12 +29,17 @@
           <%= f.button :submit %>
      
       <% end %>
-
-    
     </div>
-    <div class="col-sm-3">
-      
+    <div class="col align-self-end">
+     <ul style="text-align:left;">
+      <h3 style="text-align:center;">Contest Rules</h3>
+      <li>Participants must submit: Full name, email address and slogan less than 50 letters</li>
+      <br />
+      <li>Only 1 submission per person</li>
+      <br />
+      <li>Slogans should express BBR’s spirit and please no obscene language as the entry will be disqualified. </li>
+    </ul>
+
     </div>
   </div>
 </div>
-  

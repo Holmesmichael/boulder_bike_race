@@ -64,6 +64,11 @@ h1 , h6, .info-history h5 {
 }
 
 
+.btn-default, .btn-warning {
+    background-color: #d1956a;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
 
   /*--------------------------
         general
@@ -187,16 +192,37 @@ body, html {
       margin-right: -200px;
       box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   }
+
+  .card-title, .card-header {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  }
   /*--------------------------
            contest
  --------------------------*/
 
+ .align-self-start, .align-self-center, .align-self-end {
+     margin-top: 80px;
+ }
+
  /*--------------------------
          photos page
  --------------------------*/
+
+ .riderrow {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    margin-top: 15px;
+    margin-bottom: 15px;
+ }
  /*--------------------------
         locations page
  --------------------------*/
+#map {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+
+}
+
  /*--------------------------
         riders page
  --------------------------*/

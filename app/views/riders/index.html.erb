@@ -1,16 +1,17 @@
 <p id="notice"><%= notice %></p>
 
 <div class="container">
-  <div class="row">
+  <div class="row" style="margin-top: 100px;">
     <div class="col-sm-3">
       
     </div>
     <div class="col-sm-6" >
-      <h1>Riders in this dang race</h1>
+      <h1 style="color:navy;">Current list of riders in the race</h1>
 
-      <table style="text-align:center;width:100%;">
+      <table style="text-align:center;width:100%;margin-top:50px;">
         <thead>
           <tr>
+            <th>Rider</th>
             <th>First name</th>
             <th>Last name</th>
             <th>City</th>
@@ -20,8 +21,11 @@
         </thead>
 
         <tbody>
+
           <% @riders.each do |rider| %>
-            <tr>
+          
+            <tr class="riderrow">
+              <td><%= image_tag get_random_avatar , { :style => "width:100px;height:100px;border-radius:100%;"}%></td>
               <td><%= rider.first_name %></td>
               <td><%= rider.last_name %></td>
               <td><%= rider.city %></td>
@@ -36,3 +40,7 @@
     </div>
   </div>
 </div>
+
+
+
+
