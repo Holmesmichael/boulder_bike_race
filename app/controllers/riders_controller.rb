@@ -15,11 +15,7 @@ class RidersController < ApplicationController
   # GET /riders/1
   # GET /riders/1.json
   def show
-    @rider = Rider.where(id: params[:id])
-    respond_to do |format|
-      format.html
-      format.json { render json: @rider }
-    end
+
   end
 
 

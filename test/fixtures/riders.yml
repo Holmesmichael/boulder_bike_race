@@ -1,17 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  first_name: MyString
-  last_name: MyString
-  city: MyString
-  state: MyString
-  latitude: MyString
-  longitude: MyString
+  first_name: Leonard
+  last_name: Flenard
+  city: Boring
+  state: IN
+  latitude: 38.0123
+  longitude: -104.025
 
 two:
-  first_name: MyString
-  last_name: MyString
-  city: MyString
-  state: MyString
-  latitude: MyString
-  longitude: MyString
+  first_name: Harry
+  last_name: Guy
+  city: Mulletsville
+  state: AL
+  latitude: 37.987
+  longitude: -103.258

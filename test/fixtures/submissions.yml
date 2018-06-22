@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  first_name: MyString
-  last_name: MyString
-  email: MyString
-  slogan: MyString
+  first_name: Bob
+  last_name: Hope
+  email: bobthehope@example.com
+  slogan: Come get your race on at good ol' BBR
 
 two:
-  first_name: MyString
-  last_name: MyString
-  email: MyString
-  slogan: MyString
+  first_name: Julia
+  last_name: Gulia
+  email: juliagulia@example.com
+  slogan: BBR is the bees knees
