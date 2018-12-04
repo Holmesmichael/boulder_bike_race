@@ -1,24 +1,28 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Visual requirements:
+Have an "outdoorsy and athletic feel"
 
-Things you may want to cover:
+Landing Page features:
 
-* Ruby version
+JavaScript countdown timer unti race date
 
-* System dependencies
+Photos Page: 
 
-* Configuration
+Flickr API, 40 photos on the page taken from #boulderbikerace and #bikerace
 
-* Database creation
+Riders Page: 
 
-* Database initialization
+SQLite data generating rider information 
 
-* How to run the test suite
+Map Page:
 
-* Services (job queues, cache servers, search engines, etc.)
+Google Maps API pulling SQL data to add pins to the map of riders current location
 
-* Deployment instructions
-
-* ...
+Tech used:
+HTML
+CSS
+BootStrap
+Ruby on Rails
+SQLite
+Google Maps API
+Flickr API
